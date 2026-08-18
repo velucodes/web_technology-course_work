@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internet and Web Concepts</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <h1>Fundamentals of the World Wide Web</h1>
+    </header>
+
+    <main class="container">
+        <section class="card">
+            <h2>1. Internet Overview</h2>
+            <p>
+                The Internet is a worldwide network of interconnected computer
+                networks. It enables devices to communicate and exchange data
+                using communication protocols such as TCP/IP.
+            </p>
+            <div class="diagram">
+                <span class="node">Computer</span>
+                <span class="arrow">↔</span>
+                <span class="node">Router</span>
+                <span class="arrow">↔</span>
+                <span class="node">Internet</span>
+                <span class="arrow">↔</span>
+                <span class="node">Web Server</span>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>2. Fundamental Computer Network Concepts</h2>
+            <ul>
+                <li><strong>Node:</strong> A device connected to a network.</li>
+                <li><strong>IP Address:</strong> A logical address used to identify a device.</li>
+                <li><strong>MAC Address:</strong> A hardware address associated with a network interface.</li>
+                <li><strong>Router:</strong> Forwards data between different networks.</li>
+                <li><strong>Protocol:</strong> Rules that define communication between devices.</li>
+                <li><strong>DNS:</strong> Converts domain names into IP addresses.</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>3. URL and Its Structure</h2>
+            <p class="url-example">
+                https://www.example.com:443/products/index.html?id=10#details
+            </p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Part</th>
+                        <th>Example</th>
+                        <th>Purpose</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Scheme</td><td>https</td><td>Communication protocol</td></tr>
+                    <tr><td>Host</td><td>www.example.com</td><td>Identifies the server/domain</td></tr>
+                    <tr><td>Port</td><td>443</td><td>Network service port</td></tr>
+                    <tr><td>Path</td><td>/products/index.html</td><td>Requested resource</td></tr>
+                    <tr><td>Query</td><td>?id=10</td><td>Parameters sent to the server</td></tr>
+                    <tr><td>Fragment</td><td>#details</td><td>Location inside the resource</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="card">
+            <h2>4. Domain Name</h2>
+            <p>
+                A domain name is a human-readable name used to access a website.
+                DNS translates the domain name into an IP address.
+            </p>
+            <div class="diagram">
+                <span class="node">www.college.edu</span>
+                <span class="arrow">→ DNS →</span>
+                <span class="node">IP Address</span>
+                <span class="arrow">→</span>
+                <span class="node">Web Server</span>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>5. Web Browsers and Web Servers</h2>
+            <p>
+                A <strong>web browser</strong> is client software that requests
+                and displays web resources. A <strong>web server</strong> stores
+                and delivers web resources in response to requests.
+            </p>
+            <div class="diagram">
+                <span class="node">Browser</span>
+                <span class="arrow">HTTP Request →</span>
+                <span class="node">Web Server</span>
+                <span class="arrow">← HTTP Response</span>
+                <span class="node">Web Page</span>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>6. Working Principle of a Website</h2>
+            <ol>
+                <li>The user enters a URL or selects a link.</li>
+                <li>The browser finds the server using DNS.</li>
+                <li>The browser sends an HTTP/HTTPS request.</li>
+                <li>The server processes the request and returns a response.</li>
+                <li>The browser renders HTML, CSS and JavaScript.</li>
+            </ol>
+        </section>
+
+        <section class="card">
+            <h2>7. Client-side vs Server-side Scripting</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Client-side Scripting</th>
+                        <th>Server-side Scripting</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Runs mainly in the user's browser.</td>
+                        <td>Runs on the web server.</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript is commonly used.</td>
+                        <td>Examples include Java, PHP, Python and Node.js.</td>
+                    </tr>
+                    <tr>
+                        <td>Used for interface interaction and browser-side validation.</td>
+                        <td>Used for business logic, authentication and database operations.</td>
+                    </tr>
+                    <tr>
+                        <td>Browser can inspect the client-side source.</td>
+                        <td>Server implementation is normally hidden from the client.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+</html>
